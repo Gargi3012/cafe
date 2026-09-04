@@ -266,7 +266,7 @@
   </section>
 
   <!-- 3. Story / About Section: Artisan Chef in Action (Image 2) -->
-  <section id="story" class="py-16 sm:py-20 px-4 sm:px-6 max-w-6xl mx-auto border-t border-hearth-sand/60">
+  <section id="story" class="scroll-mt-20 sm:scroll-mt-24 py-16 sm:py-20 px-4 sm:px-6 max-w-6xl mx-auto border-t border-hearth-sand/60">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
       
       <div class="lg:col-span-5 space-y-5 order-2 lg:order-1">
@@ -316,112 +316,120 @@
   </section>
 
   <!-- 4. Seasonal Menu & Touch-Friendly Swipeable Dish Cards (Requirement 3) -->
-  <section id="menu" class="py-16 sm:py-20 px-4 sm:px-6 max-w-6xl mx-auto">
-    <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12">
+  <section id="menu" class="scroll-mt-14 sm:scroll-mt-16 pt-3 sm:pt-4 lg:pt-3 pb-6 sm:pb-8 px-4 sm:px-6 max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-4 sm:mb-5">
       <div>
         <span class="text-xs uppercase tracking-widest font-semibold text-hearth-sage">Seasonal Offerings</span>
-        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-hearth-umber mt-1">Sculpted by the Hearth</h2>
+        <h2 class="font-serif text-2xl sm:text-3xl lg:text-[2.25rem] text-hearth-umber leading-tight mt-0.5">Sculpted by the Hearth</h2>
       </div>
       
-      <!-- Interactive Category Filter Tabs (Min 48px touch targets) -->
-      <div class="flex space-x-2 mt-4 md:mt-0 overflow-x-auto no-scrollbar pb-2">
-        <button class="h-12 px-5 rounded-full bg-hearth-terracotta text-white text-xs font-semibold tracking-wider uppercase shrink-0 tap-bounce shadow-sm">All Dishes</button>
-        <button class="h-12 px-5 rounded-full bg-hearth-sand/70 hover:bg-hearth-sand text-hearth-umber text-xs font-semibold tracking-wider uppercase transition shrink-0 tap-bounce">Wood-Fired Pizza</button>
-        <button class="h-12 px-5 rounded-full bg-hearth-sand/70 hover:bg-hearth-sand text-hearth-umber text-xs font-semibold tracking-wider uppercase transition shrink-0 tap-bounce">Handmade Pasta</button>
-        <button class="h-12 px-5 rounded-full bg-hearth-sand/70 hover:bg-hearth-sand text-hearth-umber text-xs font-semibold tracking-wider uppercase transition shrink-0 tap-bounce">Botanicals & Brews</button>
+      <!-- Interactive Category Filter Tabs -->
+      <div class="flex items-center space-x-2.5 mt-3 md:mt-0 overflow-x-auto no-scrollbar pb-1">
+        <button class="h-10 px-5 rounded-full bg-hearth-terracotta text-white text-xs font-semibold tracking-wider uppercase shrink-0 tap-bounce shadow-sm">
+          All Dishes
+        </button>
+        <button class="h-10 px-5 rounded-full bg-white/80 hover:bg-white border border-hearth-sand text-hearth-umber hover:text-hearth-terracotta text-xs font-semibold tracking-wider uppercase transition shrink-0 tap-bounce shadow-2xs">
+          Wood-Fired Pizza
+        </button>
+        <button class="h-10 px-5 rounded-full bg-white/80 hover:bg-white border border-hearth-sand text-hearth-umber hover:text-hearth-terracotta text-xs font-semibold tracking-wider uppercase transition shrink-0 tap-bounce shadow-2xs">
+          Handmade Pasta
+        </button>
+        <button class="h-10 px-5 rounded-full bg-white/80 hover:bg-white border border-hearth-sand text-hearth-umber hover:text-hearth-terracotta text-xs font-semibold tracking-wider uppercase transition shrink-0 tap-bounce shadow-2xs">
+          Botanicals & Brews
+        </button>
       </div>
     </div>
 
     <!-- Mobile Swipe Hint -->
-    <div class="md:hidden flex items-center justify-between text-[11px] text-hearth-linen mb-3 px-1">
+    <div class="md:hidden flex items-center justify-between text-[11px] text-hearth-linen mb-2 px-1">
       <span class="flex items-center gap-1">👉 Swipe to explore dishes</span>
       <span>4 Specialities</span>
     </div>
 
     <!-- Dish Grid: Mobile Horizontal Snap Scroll / Desktop 4-Col Grid -->
-    <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 md:grid md:grid-cols-4 md:gap-6 no-scrollbar">
+    <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-2 md:grid md:grid-cols-4 md:gap-5 no-scrollbar">
       
       <!-- Dish 1 (Image 3: Wood-Fired Pizza) -->
-      <div class="snap-center shrink-0 w-[82vw] max-w-[320px] md:w-auto md:max-w-none bg-white/80 p-4 rounded-3xl border border-hearth-sand shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+      <div class="snap-center shrink-0 w-[82vw] max-w-[320px] md:w-auto md:max-w-none bg-white/95 p-4 sm:p-5 rounded-3xl border border-hearth-sand shadow-sm hover:shadow-md transition flex flex-col justify-between group">
         <div>
-          <div class="h-44 sm:h-48 rounded-2xl overflow-hidden mb-4 bg-hearth-sand">
+          <div class="h-44 sm:h-48 lg:h-50 xl:h-52 rounded-2xl overflow-hidden mb-4 bg-hearth-sand">
             <img src="images/dish-pizza.jpg" 
                  alt="Artisanal Neapolitan Pizza" 
                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
           </div>
           <div class="flex justify-between items-baseline mb-2">
-            <h3 class="font-serif text-xl font-medium text-hearth-umber">Artisanal Neapolitan Pizza</h3>
-            <span class="text-sm font-bold text-hearth-terracotta">₹575</span>
+            <h3 class="font-serif text-xl font-medium text-hearth-umber leading-snug">Neapolitan Pizza</h3>
+            <span class="text-sm sm:text-base font-bold text-hearth-terracotta shrink-0 ml-2">₹575</span>
           </div>
           <p class="text-xs text-hearth-linen leading-relaxed mb-4">
-            Sourdough crust, San Marzano sauce, fresh buffalo mozzarella, charred cherry tomatoes, basil & hot honey.
+            Sourdough crust, San Marzano sauce, fresh buffalo mozzarella, charred cherry tomatoes & hot honey.
           </p>
         </div>
-        <span class="text-[10px] font-semibold text-hearth-sage uppercase tracking-wider">Wood-Fired • Vegetarian</span>
+        <span class="text-[10px] font-semibold text-hearth-sage uppercase tracking-wider pt-3 border-t border-hearth-sand/70">Wood-Fired • Vegetarian</span>
       </div>
 
       <!-- Dish 2 (Image 4: Truffle Pasta) -->
-      <div class="snap-center shrink-0 w-[82vw] max-w-[320px] md:w-auto md:max-w-none bg-white/80 p-4 rounded-3xl border border-hearth-sand shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+      <div class="snap-center shrink-0 w-[82vw] max-w-[320px] md:w-auto md:max-w-none bg-white/95 p-4 sm:p-5 rounded-3xl border border-hearth-sand shadow-sm hover:shadow-md transition flex flex-col justify-between group">
         <div>
-          <div class="h-44 sm:h-48 rounded-2xl overflow-hidden mb-4 bg-hearth-sand">
+          <div class="h-44 sm:h-48 lg:h-50 xl:h-52 rounded-2xl overflow-hidden mb-4 bg-hearth-sand">
             <img src="images/dish-pasta.jpg" 
                  alt="Truffle & Morel Fettuccine" 
                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
           </div>
           <div class="flex justify-between items-baseline mb-2">
-            <h3 class="font-serif text-xl font-medium text-hearth-umber">Truffle & Morel Fettuccine</h3>
-            <span class="text-sm font-bold text-hearth-terracotta">₹620</span>
+            <h3 class="font-serif text-xl font-medium text-hearth-umber leading-snug">Truffle Fettuccine</h3>
+            <span class="text-sm sm:text-base font-bold text-hearth-terracotta shrink-0 ml-2">₹620</span>
           </div>
           <p class="text-xs text-hearth-linen leading-relaxed mb-4">
-            Hand-rolled pasta, wild forest mushrooms, truffle emulsion, toasted pine nuts, aged parmesan.
+            Hand-rolled pasta, wild forest morels, rich truffle emulsion, toasted pine nuts & aged parmesan.
           </p>
         </div>
-        <span class="text-[10px] font-semibold text-hearth-sage uppercase tracking-wider">Hand-Rolled Pasta</span>
+        <span class="text-[10px] font-semibold text-hearth-sage uppercase tracking-wider pt-3 border-t border-hearth-sand/70">Hand-Rolled Pasta</span>
       </div>
 
       <!-- Dish 3 (Image 5: Burrata Toast) -->
-      <div class="snap-center shrink-0 w-[82vw] max-w-[320px] md:w-auto md:max-w-none bg-white/80 p-4 rounded-3xl border border-hearth-sand shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+      <div class="snap-center shrink-0 w-[82vw] max-w-[320px] md:w-auto md:max-w-none bg-white/95 p-4 sm:p-5 rounded-3xl border border-hearth-sand shadow-sm hover:shadow-md transition flex flex-col justify-between group">
         <div>
-          <div class="h-44 sm:h-48 rounded-2xl overflow-hidden mb-4 bg-hearth-sand">
+          <div class="h-44 sm:h-48 lg:h-50 xl:h-52 rounded-2xl overflow-hidden mb-4 bg-hearth-sand">
             <img src="images/dish-burrata.jpg" 
                  alt="Burrata & Pesto Tartine" 
                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
           </div>
           <div class="flex justify-between items-baseline mb-2">
-            <h3 class="font-serif text-xl font-medium text-hearth-umber">Burrata & Pesto Tartine</h3>
-            <span class="text-sm font-bold text-hearth-terracotta">₹480</span>
+            <h3 class="font-serif text-xl font-medium text-hearth-umber leading-snug">Burrata Tartine</h3>
+            <span class="text-sm sm:text-base font-bold text-hearth-terracotta shrink-0 ml-2">₹480</span>
           </div>
           <p class="text-xs text-hearth-linen leading-relaxed mb-4">
-            Toasted sourdough, whole creamy burrata, slow-roasted heirloom tomatoes, fresh walnut pesto, balsamic.
+            Toasted sourdough, whole creamy burrata, slow-roasted heirloom tomatoes & fresh walnut pesto.
           </p>
         </div>
-        <span class="text-[10px] font-semibold text-hearth-sage uppercase tracking-wider">Daily Handcrafted</span>
+        <span class="text-[10px] font-semibold text-hearth-sage uppercase tracking-wider pt-3 border-t border-hearth-sand/70">Daily Handcrafted</span>
       </div>
 
       <!-- Dish 4 (Image 6: Drinks) -->
-      <div class="snap-center shrink-0 w-[82vw] max-w-[320px] md:w-auto md:max-w-none bg-white/80 p-4 rounded-3xl border border-hearth-sand shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+      <div class="snap-center shrink-0 w-[82vw] max-w-[320px] md:w-auto md:max-w-none bg-white/95 p-4 sm:p-5 rounded-3xl border border-hearth-sand shadow-sm hover:shadow-md transition flex flex-col justify-between group">
         <div>
-          <div class="h-44 sm:h-48 rounded-2xl overflow-hidden mb-4 bg-hearth-sand">
+          <div class="h-44 sm:h-48 lg:h-50 xl:h-52 rounded-2xl overflow-hidden mb-4 bg-hearth-sand">
             <img src="images/dish-drinks.jpg" 
                  alt="Botanical Brews & Tonics" 
                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
           </div>
           <div class="flex justify-between items-baseline mb-2">
-            <h3 class="font-serif text-xl font-medium text-hearth-umber">Botanical Brews & Tonics</h3>
-            <span class="text-sm font-bold text-hearth-terracotta">₹290</span>
+            <h3 class="font-serif text-xl font-medium text-hearth-umber leading-snug">Botanical Brews</h3>
+            <span class="text-sm sm:text-base font-bold text-hearth-terracotta shrink-0 ml-2">₹290</span>
           </div>
           <p class="text-xs text-hearth-linen leading-relaxed mb-4">
             Layered tonic espresso with fresh rosemary, chilled hibiscus botanical craft iced tea.
           </p>
         </div>
-        <span class="text-[10px] font-semibold text-hearth-sage uppercase tracking-wider">Artisan Brews & Botanicals</span>
+        <span class="text-[10px] font-semibold text-hearth-sage uppercase tracking-wider pt-3 border-t border-hearth-sand/70">Artisan Brews & Tonics</span>
       </div>
 
     </div>
   </section>
 
   <!-- 5. Provenance: 4-Step Journey Section -->
-  <section id="provenance" class="py-14 sm:py-16 px-4 sm:px-6 max-w-6xl mx-auto">
+  <section id="provenance" class="scroll-mt-20 sm:scroll-mt-24 py-14 sm:py-16 px-4 sm:px-6 max-w-6xl mx-auto">
     <div class="bg-hearth-sand/50 p-6 sm:p-12 rounded-3xl border border-hearth-sand">
       <div class="text-center max-w-lg mx-auto mb-8 sm:mb-10">
         <span class="text-xs uppercase tracking-widest font-semibold text-hearth-sage">Our Philosophy</span>
@@ -454,7 +462,7 @@
   </section>
 
   <!-- 6. Experiences: Sculpted Bento Boxes with Images 7 & 8 -->
-  <section id="experiences" class="py-14 sm:py-16 px-4 sm:px-6 max-w-6xl mx-auto">
+  <section id="experiences" class="scroll-mt-20 sm:scroll-mt-24 py-14 sm:py-16 px-4 sm:px-6 max-w-6xl mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
       
       <!-- Forest Sage Bento: Chef's Counter & Basque Cheesecake (Image 7) -->
@@ -517,7 +525,7 @@
   </section>
 
   <!-- 7. Visit Us & Hours -->
-  <section id="visit" class="py-12 px-4 sm:px-6 max-w-6xl mx-auto">
+  <section id="visit" class="scroll-mt-20 sm:scroll-mt-24 py-12 px-4 sm:px-6 max-w-6xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
       
       <!-- Stylized Map Frame -->
